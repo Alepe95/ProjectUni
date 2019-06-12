@@ -97,14 +97,8 @@
 			</a>
 			<div id="collapseReserv" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
 				<div class="bg-white py-2 collapse-inner rounded">
-					<h6 class="collapse-header">Login Screens:</h6>
-					<a class="collapse-item" href="#">Login</a>
-					<a class="collapse-item" href="#">Register</a>
-					<a class="collapse-item" href="#">Forgot Password</a>
-					<div class="collapse-divider"></div>
-					<h6 class="collapse-header">Other Pages:</h6>
-					<a class="collapse-item" href="#">404 Page</a>
-					<a class="collapse-item" href="#">Blank Page</a>
+					<a class="collapse-item" href="<?php echo site_url('Cours/listeMat') ?>">Un cours</a>
+
 				</div>
 			</div>
 		</li>
@@ -117,14 +111,9 @@
 			</a>
 			<div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
 				<div class="bg-white py-2 collapse-inner rounded">
-					<h6 class="collapse-header">Login Screens:</h6>
-					<a class="collapse-item" href="#">Login</a>
-					<a class="collapse-item" href="#">Register</a>
-					<a class="collapse-item" href="#">Forgot Password</a>
-					<div class="collapse-divider"></div>
-					<h6 class="collapse-header">Other Pages:</h6>
-					<a class="collapse-item" href="#">404 Page</a>
-					<a class="collapse-item" href="#">Blank Page</a>
+
+					<a class="collapse-item" href="<?php echo site_url('Cours/listeMatProp') ?>">Un cours</a>
+
 				</div>
 			</div>
 		</li>

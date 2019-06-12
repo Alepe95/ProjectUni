@@ -101,6 +101,27 @@ class Main extends CI_Controller
 		} else {
 			redirect('/Welcome/connexion', 'refresh');
 		}
+
+
+	}
+
+	public function note_prof($id)
+	{
+		$this->load->model('UserModel');
+		$data = array();
+
+		if ($this->session->has_userdata('id')) {
+			$user =$this->UserModel-> getUserById($id);
+			$data['user'] = $user;
+			$data['name_univ'] = $this->UserModel->getUnivById($user->id_univ);
+
+			$this->layout->set_titre($user->nom." ".$user->prenom);
+			$this->layout->view('Main/notes_profil', $data);
+
+
+		} else {
+			redirect('/Welcome/connexion', 'refresh');
+		}
 	}
 
 }

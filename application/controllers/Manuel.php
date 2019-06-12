@@ -43,10 +43,11 @@ class Manuel extends CI_Controller {
 
 			if($this->input->post('type') == 1){
 
-				$this->ManuelModel->venteManuel($titre,$prix,$this->session->id,1,$data['file'],$description,$anneeEdit,$editeur,$auteur,$theme);
+				$this->ManuelModel->venteManuel($titre,$prix,$this->session->id,$data['file'],$description,$anneeEdit,$editeur,$auteur,$theme);
 
 			}elseif ($this->input->post('type')== 2){
 				$duree = $this->input->post('dureePret');
+				$this->ManuelModel->pretManuel($titre,$prix,$this->session->id,$data['file'],$description,$anneeEdit,$editeur,$auteur,$theme,$duree);
 
 			}
 

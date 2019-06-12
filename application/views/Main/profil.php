@@ -19,7 +19,7 @@
 			Votre photo de profil actuelle :
 
 			<div class="row">
-				<div class="col"> <img class="img-thumbnail" height="200px" width="200px" src="<?php echo img_profil($this->session->photo) ?>"></div>
+				<div class="col"> <img class="img-thumbnail" height="200px" width="200px" src="<?php echo ($this->session->photo=="" ?img_profil("vide.png"):img_profil($this->session->photo))  ?>"></div>
 			</div>
 
 			<br>
